@@ -7,8 +7,8 @@
                 <h2 class="head-title">Olá, eu sou Wilgne Italo de Oliveira.<br>Conheça meu portifólio</h2>
                 <p>Bons programadores sabem o que escrever. Os melhores sabem o que reescrever.</p>
                 <div class="header-button">
-                  <a href="#" class="btn btn-common">Linkeding</i></a>
-                  <a href="#" class="btn btn-border video-popup">Fale comigo</i></a>
+                  <a href="https://www.linkedin.com/in/wilgne-italo-oliveira-79728a1ab/" target="_blank" class="btn btn-common">Linkeding</i></a>
+                  <a href="https://api.whatsapp.com/send/?phone=5582994237926&text&type=phone_number&app_absent=0" target="_blank" class="btn btn-border video-popup">Fale comigo</i></a>
                 </div>
               </div>
             </div>
@@ -19,5 +19,15 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="container">
+        {% if messages %}
+          {% for m in messages %}
+              <div class="alert alert-{{ m.tags }}">
+                <button class="close" type="button" data-dismiss="alert"></button>
+                <strong>{{ m }}</strong>
+              </div>
+          {% endfor %}
+        {% endif %}
       </div>
     </header>
